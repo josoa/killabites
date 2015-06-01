@@ -15,10 +15,10 @@ body {
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 1240px;
 	margin: 0 auto;
 	background: #fff;
-	padding-right: 40px;
+	/*padding-right: 40px;*/
 }
 
 .group:after {
@@ -76,11 +76,21 @@ body {
 	color: #222;
 }
 
-h1, nav ul li {
-	font-family: 'Oswald';
+h1, h2, h3, h4, h5, h6, nav ul li {
 	font-weight: 300;
-	text-transform: uppercase;
+	font-family: 'Oswald';
+}
 
+h1, nav ul li {
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+	text-transform: lowercase;
+}
+
+h3, h4, h5, h6 {
+	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, a {
@@ -91,12 +101,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 h1 {
 	font-weight: 100;
 	font-size: 9.333em;
-  line-height: 1em;
-}
-
-em {
-  font-style: normal;
-  text-transform: uppercase;
+  	line-height: 1em;
 }
 
 h2 {
@@ -108,7 +113,6 @@ h3 {
 }
 
 h4 {
-	font-weight: 100;
 	font-size: 2.833em;
 }
 
@@ -116,15 +120,15 @@ h5 {
 	font-size: 2em;
 }
 
+h5 + p {
+	font-size: 1.167em;
+}
+
 h6 {
 	font-weight: 500;
 	font-size: 1.667em;
 }
 
-h5 + p {
-	font-size: 1.167em;
-	font-weight: 100;
-}
 
 p {
 	font-size: 1em;
@@ -132,12 +136,15 @@ p {
 	margin-bottom: 10px;
 }
 
+em {
+  font-style: normal;
+}
+
 blockquote:before {
 	content: '“'
 }
 
 blockquote {
-  font-weight: 100;
   font-size: 2em;
 }
 
@@ -147,13 +154,11 @@ blockquote:after {
 
 blockquote + em {
   float: right;
-  font-weight: 500;
   text-transform: uppercase;
   font-size: 1.667;
 }
 
 a {
-	font-weight: 100;
 	font-size: 1.167em;
 	text-decoration: none;
 }
@@ -163,8 +168,8 @@ a:link, a:visited {
 }
 
 a:hover, a:target, a:active {
-	font-weight: 700;
-	color: #C85F6C;
+/*	font-weight: 700;
+	color: #C85F6C;*/
 }
 
 li {
@@ -173,7 +178,6 @@ li {
 
 
 nav ul li {
-	text-align: left;
 	font-size: 2em;
 	padding-left: 30px;
 }
@@ -193,11 +197,19 @@ header {
 
 /* IMAGES */
 
-[_img] {
+img {
 	margin: 5px; 
-	width: calc(100% - 10px);
 }
 
 [_img~="logo"] {
+	width: calc(100% - 10px);
 	margin-bottom: 30px;
+}
+
+.cakeBomb {
+	width: calc(25% - 10px);
+}
+
+.biscotti {
+	width: calc(45% - 10px);
 }
