@@ -27,17 +27,17 @@
 
 	<div class="group">
 		<section _col="3/4 right">
-			<div id="home">
+			<div id="home" class="group">
 				<h1>Hello!</h1>
 
 			</div>
 
-			<div id="about">
+			<div id="about" class="group">
 				<h2>We are Killa Bites</h2>
 			
 			</div>
 
-			<div id="products">
+			<div id="products" class="group">
 				<h2>We make tasty treats</h2>
 				
 				<form name="filter">
@@ -55,36 +55,69 @@
 					<input type="checkbox" name="nutFree">nut free
 				</form>	
 			
-				<img src="img/products/cheese.jpg" alt="raspberry cheesecake cake bomb" class="cakeBomb dark nutFree">
-				<p>Just like it sounds!  Amazing cheesecake surrounded by a chocolate crust and dipped in white chocolate.</p>
-				<img src="img/products/chocoLove.jpg" alt="chocolate lovers' biscotti"class="biscotti dark nutFree">
-				<p> All the chocolate we could fit in a biscotti!</p>
-				<img src="img/products/cinChip.jpg" alt="cinnamon chip biscotti"class="biscotti nutFree">
-				<p>Flavorful cinnamon bits in our vanilla biscotti, topped with a cinnamon and white chocolate drizzle.</p>
-				<img src="img/products/colada.jpg" alt="piña colada cake bomb" class="cakeBomb white nutFree">
-				<p>All the makings of a great poolside beverage in a creamy center surrounded by pineapple cake dipped in white chocolate.</p>
-				<img src="img/products/cran2.jpg" alt="cranberry white chocolate biscotti"class="biscotti white nutFree">
-				<p>Delicately sweet cookie bursting with cranberries and generously decorated with white chocolate.</p>
-				<img src="img/products/german.jpg" alt="german chocolate cake bomb" class="cakeBomb milk">
-				<p>Toasted pecan and coconut filling surrounded by a dense, moist chocolate cake dipped in milk chocolate.</p>
-				<img src="img/products/hot.jpg" alt="caliente cake bomb" class="cakeBomb white nutFree">
-				<p>Since some like it hot, their chocolate that is, we offer a Cake Bomb with the sizzle of cinnamon and cayenne pepper.</p>
-				<img src="img/products/lemon.jpg" alt="lemon kiss cake bomb" class="cakeBomb white nutFree">
-				<p>A creamy lemon filling surrounded by lemon cake and dipped in white chocolate.</p>
-				<img src="img/products/pb.jpg" alt="peanut butter cake bomb" class="cakeBomb milk">
-				<p>A smooth peanut butter filling surrounded by chocolate cake dipped in milk chocolate.</p>
-				<img src="img/products/red.jpg" alt="red velvet cake bomb" class="cakeBomb dark nutFree">
-				<p>All the goodness of a Red Velvet Cake dipped in decadent dark chocolate.</p>
-				<img src="img/products/salty.jpg" alt="salted caramel cake bomb" class="cakeBomb milk nutFree">
-				<p>A generous center of salted caramel surrounded by chocolate cake dipped in dark chocolate.</p>	
+				<div  class="cakeBomb dark nutFree" _col="1/4">
+					<img src="img/products/cheese.jpg" alt="raspberry cheesecake cake bomb">
+					<p >Just like it sounds!  Amazing cheesecake surrounded by a chocolate crust and dipped in white chocolate.</p>
+				</div>
+
+				<div class="biscotti dark nutFree" _col="1/2">
+					<img src="img/products/chocoLove.jpg" alt="chocolate lovers' biscotti">
+					<p> All the chocolate we could fit in a biscotti!</p>
+				</div>
+
+				<div class="biscotti nutFree" _col="1/2">
+					<img src="img/products/cinChip.jpg" alt="cinnamon chip biscotti">
+					<p>Flavorful cinnamon bits in our vanilla biscotti, topped with a cinnamon and white chocolate drizzle.</p>
+				</div>
+
+				<div class="cakeBomb white nutFree" _col="1/4">
+					<img src="img/products/colada.jpg" alt="piña colada cake bomb" >
+					<p>All the makings of a great poolside beverage in a creamy center surrounded by pineapple cake dipped in white chocolate.</p>
+				</div>
+
+				<div class="biscotti white nutFree" _col="1/2">
+					<img src="img/products/cran2.jpg" alt="cranberry white chocolate biscotti">
+					<p>Delicately sweet cookie bursting with cranberries and generously decorated with white chocolate.</p>
+				</div>	
+
+				<div class="cakeBomb milk" _col="1/4">
+					<img src="img/products/german.jpg" alt="german chocolate cake bomb">
+					<p>Toasted pecan and coconut filling surrounded by a dense, moist chocolate cake dipped in milk chocolate.</p>
+				</div>
+
+				<div  class="cakeBomb white nutFree" _col="1/4">
+					<img src="img/products/hot.jpg" alt="caliente cake bomb">
+					<p>Since some like it hot, their chocolate that is, we offer a Cake Bomb with the sizzle of cinnamon and cayenne pepper.</p>
+				</div>
+
+				<div class="cakeBomb white nutFree" _col="1/4">
+					<img src="img/products/lemon.jpg" alt="lemon kiss cake bomb">
+					<p >A creamy lemon filling surrounded by lemon cake and dipped in white chocolate.</p>
+				</div>
+
+				<div class="cakeBomb milk" _col="1/4">
+					<img src="img/products/pb.jpg" alt="peanut butter cake bomb">
+					<p>A smooth peanut butter filling surrounded by chocolate cake dipped in milk chocolate.</p>
+				</div>
+
+				<div class="cakeBomb dark nutFree" _col="1/4">
+					<img src="img/products/red.jpg" alt="red velvet cake bomb">
+					<p>All the goodness of a Red Velvet Cake dipped in decadent dark chocolate.</p>
+				</div>
+
+				<div class="cakeBomb milk nutFree" _col="1/4">
+					<img src="img/products/salty.jpg" alt="salted caramel cake bomb">
+					<p>A generous center of salted caramel surrounded by chocolate cake dipped in dark chocolate.</p>	
+				</div>
+
 			</div>
 
-			<div id="locations">
+			<div id="locations" class="group">
 				<h2>We are everywhere</h2>	
 			<iframe src="https://www.google.com/maps/d/embed?mid=ztKIM1fSg2cw.kxTMm03Z3t7Q" width="640" height="480"></iframe>	
 			</div>
 
-			<div id="order">
+			<div id="order" class="group">
 				<h2>Need something special?</h2>
 
 				<h6>custom ordering</h6>
@@ -98,7 +131,7 @@
 
 			</div>
 
-			<div id="contact">
+			<div id="contact" class="group">
 				<h2>Let's chat</h2>
 			
 			</div>

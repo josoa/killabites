@@ -199,6 +199,7 @@ header {
 
 img {
 	margin: 5px; 
+	max-width: 100%;
 }
 
 [_img~="logo"] {
@@ -206,15 +207,33 @@ img {
 	margin-bottom: 30px;
 }
 
-.cakeBomb {
-	width: calc(25% - 10px);
-}
-
-.biscotti {
-	width: calc(45% - 10px);
-}
-
 .hide {
 	opacity: 0;
 	position: absolute;
 }
+
+.cakeBomb {
+	position: relative;
+}
+
+.biscotti {
+	width: calc(45% - 10px);
+	position: relative;
+}
+
+.cakeBomb > p, .biscotti > p {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+
+.cakeBomb:hover p, .biscotti:hover p {
+	opacity: 1;
+}
+
+
+
+
+
+
+
