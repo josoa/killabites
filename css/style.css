@@ -18,6 +18,7 @@ body {
 	max-width: 1240px;
 	margin: 0 auto;
 	background: #fff;
+	padding-bottom: 55px;
 	/*padding-right: 40px;*/
 }
 
@@ -101,7 +102,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 h1 {
 	font-weight: 100;
 	font-size: 9.333em;
-  	line-height: 1em;
+  	line-height: 1.4em;
 }
 
 h2 {
@@ -245,7 +246,7 @@ img {
 .cakeBomb > img, .biscotti > img {
 	position: absolute;
 	bottom: 0;
-	transition: opacity 1s;
+	transition: opacity .5s;
 }
 
 .cakeBomb > p, .biscotti > p {
@@ -254,6 +255,7 @@ img {
 	bottom: 0;
 	z-index: 2;
 	padding: 5px;
+	text-align: left;
 }
 
 .cakeBomb:hover p, .biscotti:hover p, .cakeBomb:target p, .biscotti:target p, .cakeBomb:focus p, .biscotti:focus p {
@@ -325,5 +327,9 @@ input[type="submit"] {
 	box-shadow: 3px 3px 3px #ccc;
 }
 
+i.fa {
+	font-size: 3em;
+	margin: 25px 15px 0 0;
+}
 
 
