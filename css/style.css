@@ -104,7 +104,7 @@ h1 {
 
 h2 {
 	font-size: 4.667em;
-	margin-top: 5vh;
+	margin-top: 10px;
 }
 
 /*h3 {
@@ -171,9 +171,22 @@ a:link, a:visited {
 }
 
 a:hover, a:target, a:active {
-/*	font-weight: 700;
-	color: #C85F6C;*/
+	color: #C85F6C;
 }
+
+nav ul li a:hover, nav ul li a:target, nav ul li a:active {
+	font-weight: 400;
+}
+
+a[href^="http"]:hover, a[href^="http"]:target {
+	font-style: italic;
+}
+
+a[href^="http"]:active {
+	font-style: normal;
+}
+
+
 
 li {
 	list-style: none;
@@ -277,6 +290,10 @@ img {
 
 .cakeBomb:hover img, .biscotti:hover img, .cakeBomb:target img, .biscotti:target img, .cakeBomb:focus img, .biscotti:focus img {
 	opacity: 0;
+}
+
+.biscotti:hover {
+	height: 258px;
 }
 
 /* checkboxes */
