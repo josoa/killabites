@@ -106,6 +106,7 @@ h1 {
 
 h2 {
 	font-size: 4.667em;
+	margin-top: 5vh;
 }
 
 /*h3 {
@@ -117,8 +118,8 @@ h2 {
 }*/
 
 h3 {
-	font-size: 2.2vh;
-	font-weight: 100;
+	font-size: 1.667em;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 
@@ -127,19 +128,21 @@ h5 + p {
 }
 
 h6 {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 1.667em;
 }
 
 
 p {
-	font-size: 1.2vh;
-	line-height: 1.6vh;
+	font-size: 1em;
+	line-height: 1.325em;
 	margin-bottom: 10px;
+	padding-right: 15%;
+	text-align: justify;
 }
 
 em {
-  font-style: normal;
+	font-size: 1.2em;
 }
 
 blockquote:before {
@@ -213,21 +216,24 @@ img {
 	position: absolute;
 }
 
+#products {
+	margin-bottom: 15px;
+}
+
 .cakeBomb, .biscotti {
 	position: relative;
 	width: calc(25% - 20px);
 	margin:  10px;
 	float: left;
 	transition: background 2s;
-
 }
 
 .cakeBomb {
-	height: 22vh;
+	height: 258px;
 }
 
 .biscotti {
-	height: 15vh;
+	height: 185px;
 }
 
 .cakeBomb > h3, .biscotti > h3 {
@@ -250,24 +256,21 @@ img {
 	padding: 5px;
 }
 
-.cakeBomb:hover p, .biscotti:hover p {
+.cakeBomb:hover p, .biscotti:hover p, .cakeBomb:target p, .biscotti:target p, .cakeBomb:focus p, .biscotti:focus p {
 	opacity: 1;
 	color: #fff;
 }
 
-.cakeBomb:hover, .biscotti:hover {
+.cakeBomb:hover, .biscotti:hover, .cakeBomb:target, .biscotti:target, .cakeBomb:focus, .biscotti:focus {
 	background: #BE2233;
 }
 
-.cakeBomb:hover h3, .biscotti:hover h3 {
+.cakeBomb:hover h3, .biscotti:hover h3, .cakeBomb:target h3, .biscotti:target h3, .cakeBomb:focus h3, .biscotti:focus h3 {
 	font-weight: 400;
 }
 
-.cakeBomb:hover img, .biscotti:hover img {
+.cakeBomb:hover img, .biscotti:hover img, .cakeBomb:target img, .biscotti:target img, .cakeBomb:focus img, .biscotti:focus img {
 	opacity: 0;
-}
-
-.biscotti:hover {
 }
 
 /* checkboxes */
@@ -277,12 +280,50 @@ img {
 	margin: 0 25px 15px;
 }
 
-input {
+[name="filter"] input {
 	margin-right: 5px;
 }
 
-input + label:after {
+[name="filter"] label:after {
 	clear: both;
 	display: table;
 	content: ' ';
 }
+
+/* contact */
+
+[method="post"] > input, [method="post"] > textarea {
+	display: block;
+	width: 50%;
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 10px 0;
+	outline: 3px solid #eee;
+	border: none;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border: none;
+	background: #eee;
+}
+
+input[type="submit"] {
+	outline: none;
+	background: #BE2233;
+	box-shadow: 5px 5px 5px #ccc;
+	color: #fff;
+	font-family: 'Oswald' , sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+
+
+[type="submit"]:active {
+	background: #BE2233;
+	box-shadow: 3px 3px 3px #ccc;
+}
+
+
+
