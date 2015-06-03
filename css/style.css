@@ -90,9 +90,6 @@ h2, h3, h4, h5, h6 {
 	text-transform: lowercase;
 }
 
-h3, h4, h5, h6 {
-	font-weight: 400;
-}
 
 h1, h2, h3, h4, h5, h6, p, ul, li, a {
 	margin: 0;
@@ -120,17 +117,17 @@ h2 {
 
 h3 {
 	font-size: 1.667em;
-	font-weight: 300;
 	text-transform: uppercase;
 }
 
-h5 + p {
-	font-size: 1.167em;
+h4 {
+	font-size: 1.5em;
+	line-height: 2em;
 }
 
-h6 {
+h5 {
 	font-weight: 400;
-	font-size: 1.667em;
+	font-size: 1.167em;
 }
 
 
@@ -210,6 +207,13 @@ img {
 [_img~="logo"] {
 	width: calc(100% - 10px);
 	margin-bottom: 30px;
+}
+
+#images > img {
+	display: inline;
+	width: 16%;
+	margin-top: 25px;
+
 }
 
 .hide {
