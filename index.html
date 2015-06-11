@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/flat/red.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -73,21 +74,23 @@
 				<form name="filter" class="group">
 				<div>
 					<h6>type</h6>
-					<input type="checkbox" name="cakeBomb"><label>cake bomb</label>
-					<input type="checkbox" name="biscotti"><label>biscotti</label>
+					<input type="radio" name="type" value="all"><label>all</label>
+					<input type="radio" name="type" value="cakeBomb"><label>cake bomb</label>
+					<input type="radio" name="type" value="biscotti"><label>biscotti</label>
 				</div>
-					<!-- <input type="checkbox" name="popcorn"><label>popcorn </label>-->
+					<!-- <input type="radio" name="popcorn"><label>popcorn </label>-->
 				<div>
 					<h6>chocolate</h6>
-					<input type="checkbox" name="white"><label>white</label>
-					<input type="checkbox" name="milk"><label>milk</label>
-					<input type="checkbox" name="dark"><label>dark</label>
+					<input type="radio" name="chocolate" value="all"><label>all</label>
+					<input type="radio" name="chocolate" value="white"><label>white</label>
+					<input type="radio" name="chocolate" value="milk"><label>milk</label>
+					<input type="radio" name="chocolate" value="dark"><label>dark</label>
 				</div>
 				<div>
 					<h6>dietary</h6>
-					<!-- <input type="checkbox" name="vegan"><label>vegan</label> -->
-					<!-- <input type="checkbox" name="glutenFree"><label>gluten free</label> -->
-					<input type="checkbox" name="nutFree"><label>nut free</label>
+					<!-- <input type="radio" name="vegan"><label>vegan</label> -->
+					<!-- <input type="radio" name="glutenFree"><label>gluten free</label> -->
+					<input type="radio" name="dietary" value="nutFree"><label>nut free</label>
 				</div>
 				</form>	
 			
@@ -205,6 +208,7 @@
 </div>
 
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script src="js/icheck.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
