@@ -1,4 +1,4 @@
-// initialize iCheck with flat red skin
+// initialize iCheck with flat red skin; touch-ready
 
 $(document).ready(function(){
   $('input').iCheck({

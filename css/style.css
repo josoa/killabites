@@ -502,4 +502,8 @@ i.fa {
 }
 
 
-
+@media (max-width: 320px) {
+    .product {
+        width: 100%;
+    }
+}
