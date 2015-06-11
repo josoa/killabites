@@ -502,8 +502,17 @@ i.fa {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
+    
     .product {
         width: 100%;
+    }
+    
+    h1 {
+        font-size: 7em;
+    }
+    
+    nav ul li {
+        font-size: 1.2em;
     }
 }
