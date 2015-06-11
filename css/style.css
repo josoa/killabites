@@ -232,7 +232,7 @@ li {
 
 nav ul li {
 	font-size: 2em;
-	padding-left: 30px;
+	padding-left: 1em;
 }
 
 /* header */
@@ -272,20 +272,11 @@ img, iframe {
 .cakeBomb, .biscotti {
 	position: relative;
 	width: calc(33% - 20px);
+    height: 258px;
 	margin:  10px;
 	float: left;
 	transition: background 1s;
 }
-
-.cakeBomb, .biscotti {
-	height: 258px;
-}
-
-/*
-.biscotti {
-	height: 185px;
-}
-*/
 
 .cakeBomb > h3, .biscotti > h3 {
 	padding: 5px 10px;
@@ -319,17 +310,13 @@ img, iframe {
 }
 
 .cakeBomb:hover h3, .biscotti:hover h3, .cakeBomb:target h3, .biscotti:target h3, .cakeBomb:focus h3, .biscotti:focus h3 {
-	font-weight: 400;
+	color: #fff;
 }
 
 .cakeBomb:hover img, .biscotti:hover img, .cakeBomb:target img, .biscotti:target img, .cakeBomb:focus img, .biscotti:focus img {
 	opacity: 0;
     transition: opacity 1s;
 
-}
-
-.biscotti:hover {
-	height: 258px;
 }
 
 .hide {
@@ -401,7 +388,82 @@ i.fa {
 /* media queries */
 
 @media (max-width: 960px) {
+    
     p {
         line-height: 1.325em;
+        text-align: left;
+    }
+    
+    h2 {
+        font-size: 4em;
+    }
+    
+    h3 {
+        font-size: 1.25em;
+    }
+
+    label {
+        font-size: .75em;
+    } 
+    
+    .cakeBomb, .biscotti {
+        height: 235px;
+        margin-top: 10px;
+    }
+    
+    [method="post"] > input, [method="post"] > textarea {
+        width: 75%;
     }
 }
+
+@media (max-width: 768px) {
+    
+    body {
+        font-size: 14px;
+    }
+    
+    nav ul li {
+        padding-left: .2em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+/*        text-align: justify;*/
+        line-height: 1.6em;
+        padding-right: 5%;
+    }
+    
+    a {
+        font-size: 1em;
+    }
+    
+    label {
+        font-size: 1em;
+    }
+
+    .cakeBomb, .biscotti {
+        width: calc(50% - 20px); 
+        height: 220px;
+    }
+    
+     [method="post"] > input, [method="post"] > textarea {
+        width: 95%;
+    }
+    
+    .product p {
+        font-size: 1em;
+    }
+    
+}
+
+
+@media (max-width: 590px) {
+
+    
+    
+}
+
+
