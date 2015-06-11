@@ -229,11 +229,6 @@ img {
 
 }
 
-.hide {
-	opacity: 0;
-	position: absolute;
-}
-
 #products {
 	margin-bottom: 15px;
 }
@@ -243,7 +238,7 @@ img {
 	width: calc(25% - 20px);
 	margin:  10px;
 	float: left;
-	transition: background 2s;
+	transition: background 1s;
 }
 
 .cakeBomb {
@@ -263,7 +258,7 @@ img {
 .cakeBomb > img, .biscotti > img {
 	position: absolute;
 	bottom: 0;
-	transition: opacity .5s;
+	transition: opacity 4s;
 }
 
 .cakeBomb > p, .biscotti > p {
@@ -278,10 +273,11 @@ img {
 .cakeBomb:hover p, .biscotti:hover p, .cakeBomb:target p, .biscotti:target p, .cakeBomb:focus p, .biscotti:focus p {
 	opacity: 1;
 	color: #fff;
+    background: rgba(190, 34, 51, .5);
 }
 
 .cakeBomb:hover, .biscotti:hover, .cakeBomb:target, .biscotti:target, .cakeBomb:focus, .biscotti:focus {
-	background: #BE2233;
+	background: rgba(190, 34, 51, .5);
 }
 
 .cakeBomb:hover h3, .biscotti:hover h3, .cakeBomb:target h3, .biscotti:target h3, .cakeBomb:focus h3, .biscotti:focus h3 {
@@ -290,10 +286,17 @@ img {
 
 .cakeBomb:hover img, .biscotti:hover img, .cakeBomb:target img, .biscotti:target img, .cakeBomb:focus img, .biscotti:focus img {
 	opacity: 0;
+    transition: opacity 1s;
+
 }
 
 .biscotti:hover {
 	height: 258px;
+}
+
+.hide {
+	opacity: 0;
+	position: absolute;
 }
 
 /* checkboxes */
