@@ -17,7 +17,7 @@
 <div class="container">
 <div class="group">
 	<header _col="1/4">
-		<img src="img/logo.svg" alt="" _img="logo">
+		<img src="img/logo.svg" alt="" class="logo">
 		<nav>
 			<ul>
 				<li><a href="#home">Home</a></li>
@@ -34,6 +34,7 @@
 	<div class="group">
 		<section _col="3/4 right">
 
+<!--
 			<div id="images">
 				<img src="img/bake.png" alt="">
 				<img src="img/pop.png" alt="">
@@ -42,6 +43,7 @@
 				<img src="img/taste.png" alt="">
 				<img src="img/wed.png" alt="">
 			</div>
+-->
 
 			<div id="home" class="group">
 				<h1>Hello!</h1>
@@ -76,14 +78,12 @@
 				<form name="filter" class="group">
 				<div>
 					<h6>type</h6>
-					<input type="radio" name="type" value="all"><label>all</label>
 					<input type="radio" name="type" value="cakeBomb"><label>cake bomb</label>
 					<input type="radio" name="type" value="biscotti"><label>biscotti</label>
 				</div>
 					<!-- <input type="radio" name="popcorn"><label>popcorn </label>-->
 				<div>
 					<h6>chocolate</h6>
-					<input type="radio" name="type" value="all"><label>all</label>
 					<input type="radio" name="type" value="white"><label>white</label>
 					<input type="radio" name="type" value="milk"><label>milk</label>
 					<input type="radio" name="type" value="dark"><label>dark</label>
@@ -94,6 +94,8 @@
 					<!-- <input type="radio" name="glutenFree"><label>gluten free</label> -->
 					<input type="radio" name="type" value="nutFree"><label>nut free</label>
 				</div>
+				<input type="radio" name="type" value="all"><label>all</label>
+
 				</form>	
 			
 				<div class="product cakeBomb dark nutFree">
@@ -163,11 +165,12 @@
 					<img src="img/products/cran2.jpg" alt="cranberry white chocolate biscotti">
 					<p>Delicately sweet cookie bursting with cranberries and generously decorated with white chocolate.</p>
 				</div>	
-			</div>
+				
+                <p class="caption">*Pricing varies by location</p>
+				
+				
+</div>
 
-				<div>
-					<p><em>*Pricing varies by location</em></p>
-				</div>
 
 
 			<div id="locations" class="group">
@@ -176,7 +179,7 @@
 			</div>
 
 			<div id="order" class="group">
-				<h2>Need something special?</h2>
+				<h2>We can help</h2>
 
 				<h4>custom ordering</h4>
 				<p>If you're looking for something in particular and just can't seem to find it, never fear! Just let us know (preferably a week or more in advance!) and we'll make sure to get you your fix.</p>
@@ -190,13 +193,13 @@
 			</div>
 
 			<div id="contact" class="group">
-				<h2>Talk to us!</h2>
+				<h2>Talk to us</h2>
 
 				<form action="//formspree.io/ashleyjhaveri@gmail.com"
 				method="POST">
 					<input type="text" name="name" placeholder="Name">
 					<input type="email" name="_replyto" placeholder="Email Address">
-					<textarea type="textarea"  rows="6" name="message" placeholder="Hey, KillaBites..."></textarea>
+					<textarea type="textarea"  rows="6" name="message" placeholder="Hey, Killa Bites!"></textarea>
 					<input type="submit" value="Send">
 				</form>
 
